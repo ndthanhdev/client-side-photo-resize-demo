@@ -9,7 +9,8 @@ export default function App() {
       <Engine.Provider value={PicaEngine}>
         <List
           step={0.1}
-          src="https://satyr.dev/2000x2000/1?texture=graphpaper&text=jjjjalsdkfuqwerpouiyasdfasdlfwerasdf"
+          src="https://satyr.dev/2000x2000/1?texture=graphpaper&text=jjjjalsdkfuqwerpouiyasdf"
+          // src="/1.png"
         />
       </Engine.Provider>
     </div>

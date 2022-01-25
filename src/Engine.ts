@@ -2,8 +2,8 @@ import React from "react";
 
 interface Input {
   src: string;
-  outW: number;
-  outH: number;
+  toW: number;
+  toH: number;
 }
 
 export interface Engine {
