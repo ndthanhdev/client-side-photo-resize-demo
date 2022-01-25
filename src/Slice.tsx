@@ -31,7 +31,8 @@ export const Slice: React.FC<Slice> = ({
   const sessRef = React.useRef(0);
   React.useEffect(() => {
     async function doIt() {
-      const sess = sessRef.current++;
+      sessRef.current++;
+      const sess = sessRef.current;
 
       try {
         let res = await engine({
@@ -64,7 +65,7 @@ export const Slice: React.FC<Slice> = ({
   if (state.status !== "loaded") {
     el = state.status;
   } else {
-    el = <ReactCompareImage leftImage={src} rightImage={src} />;
+    el = <ReactCompareImage leftImage={state.src} rightImage={src} />;
   }
 
   return (
